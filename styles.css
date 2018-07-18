@@ -1,4 +1,79 @@
+@font-face {
+    font-family: "designfont";
+    src: url('fonts/PlayfairDisplay-Bold.otf') format('opentype'),
+    url('fonts/PlayfairDisplay-Bold.woff') format('woff'),
+    url('fonts/PlayfairDisplay700.ttf') format('truetype') ;
+}
+h1,.head,a{font-family: 'designfont'}
 .abtext {
+    padding: 1em ;
     display: block;
     border: 3px solid black;
+}
+.abthead {
+    padding-right: 3em;
+    display: block;
+}
+p {margin: 0;}
+nav {
+    display: inline-block;
+    padding: 0;
+}
+#jobtitle{font-size: 4em}
+#me,#jobtitle{color: orangered;}
+.navlink {
+    color: #000000;
+    display: inline-block;
+    font-size: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    border-bottom: 5px solid orangered;
+}
+.subtext {
+    border-top: 3px solid black;
+    padding-top: 1em;
+}
+.endtext {
+    border-top: 3px solid black;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+section {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.head {
+    padding: .5em;
+    display: inline-block;
+    border: 3px solid black;
+}
+.joblink{
+    display: inline;
+    position: relative;
+    height: 2em;
+    top: 0;
+    float: right;
+}
+.box{display: block;}
+h2{display: inline-block;}
+.endlink{height: 2em;}
+.ent{
+    padding-left: 2em;
+    padding-right: 2em
+}
+.logo{
+    padding-left: 2em;
+    display: inline;
+    position: relative;
+    height: 50px;
+    float: right;
+}
+.col{padding: 0;}
+.imag{height: 450px;}
+button{
+    background-color: orangered;
+    color: white;
+    padding: 1em;
+    border-radius: 10%;
 }

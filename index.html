@@ -11,71 +11,135 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h2>Benjamin Easterwood</h2>
-    </header>
-    <nav>
-        <a id="abtlink">About</a>
-        <a id="explink">Experience</a>
-        <a id="worklink">Work</a>
-        <a id="contlink">Contact</a>
-    </nav>
+    <div class="container">
+        <div class="row">
+            <header class="col-6">
+                <div class="head">
+                    <h2 id="me">Benjamin Easterwood</h2>
+                    <img class="logo" src="tiedefender.jpg">
+                </div>
+            </header>
+            <nav class="col-6 text-right">
+                <a class="navlink" id="abtlink">About</a>
+                <a class="navlink" id="explink">Experience</a>
+                <a class="navlink" id="worklink">Work</a>
+                <a class="navlink" id="contlink">Contact</a>
+            </nav> 
+        </div>
+    
     <section>
-        <h1>Cashier</h1>
-        <h4>Currently in BIRMINGHAM, AL</h4>
+        <div class=" row justify-content-end">
+            <img>
+            <div class="col-8 text-left">
+                <h1 id="jobtitle">Cashier</h1>
+                <h4>Currently in BIRMINGHAM, AL</h4>
+            </div>
+            
+        </div>
+        
     </section>
     <section id="about">
-        <div class="abthead">
+        <div class="row">
+        <div class="abthead col-6 justify-content-between text-right" >
             <h1>HELLO</h1>
             <h4>Benjamin Easterwood</h4>
             <p>University of Alabama in Huntsville</p>
             <p>Bachelor of Science</p>
         </div>
-        <div class="abtext">
+        <div class="abtext col-6">
             <p>Graduated from UAH in May 2005 with a degree in Aerospace engineer. 
                 During my study at UAH I aided in the design of wind turbine blades and a heilostat control system.
                 Also as part of my study I created a stability control program in MATLAB with another student.
                 Also I completed the requirement for a math minor.
             </p>
         </div>
+        </div>
     </section>
     <section id="experience">
-        <div class="job">
+        <div class="job col-6">
+            <div class="box">
             <h2>Piggly Wiggly</h2>
-            <br>
-            <p>Currently working as a cashier at Piggly Wiggly. 
+            <a class="joblink" href="http://pigglywigglybirmingham.com/locations/river-run/"><img class="joblink" src="images\icons\linkgray.svg"></a>
+            </div>
+            <div class="subtext">
+                <p>Currently working as a cashier at Piggly Wiggly. 
                 Duties consist of opperating a cash register, asisting customers, and maintaining an accurate till.
-            </p>
+                </p>
+            </div>
+            
         </div>
     </section>
+    </div>
     <section id="work">
-        <div>
-            <img>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <a href="https://thearmoredpatrol.com/"><img class="imag card-img-top" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/30264248_1551665694950464_7651821942512549888_n.png?_nc_cat=0&oh=3c21088cc10450adee2de7572c596fa4&oe=5BC66756"></a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <a href="https://www.spaceengineersgame.com/"><img class="imag card-img-top" src="http://bluekae.com/wp-content/uploads/2014/08/space_engineers_square_1024.png"></a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <a href="https://worldoftanks.com/"><img class="imag card-img-top" src="https://worldoftanks.com/dcont/fb/image/wota_icon.png?MEDIA_PREFIX=/dcont/fb/"></a>
+                </div>
+            </div>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <a href="https://github.com/bee951"><img class="imag card-img-top" src="defender.jpg"></a>
+                </div>
+            </div>
+            <div class="col">
+                 <div class="card">
+                    <a href="https://en.wikipedia.org/wiki/Heliostat"><img class="imag card-img-top" src="https://www.power-technology.com/wp-content/uploads/sites/7/2017/09/sanfran4.jpg"></a>
+                </div>
+            </div>
+           <div class="col">
+               <div class="card">
+                    <a href="https://www.classicfirearms.com/"><img class="imag card-img-top" src="https://yt3.ggpht.com/a-/ACSszfE-Xu5j4vhZcHM32Z3nXMaERue7_jHtIXB8NA=s900-mo-c-c0xffffffff-rj-k-no"></a>
+                </div>
+            </div>  
+        </div>
     </section>
+    <div class="container">
     <section id="contact">
-        <h1>Let's Talk</h1>
-        <div>
-            <p>Let's work together</p>
+        <div class="row">
+        <div class="col-5 text-right">
+            <h1>Let's Talk</h1>
+        </div>
+        <div class="col-4 text-right">
+            <p>Let's work together.</p>
             <p>ben.easterwood@gmail.com</p>
         </div>
-        <form>
-            <input type="text" name="Name" placeholder="Name"><br>
-            <input type="email" name="Email" placeholder="Email"><br>
-            <input type="text" name="Message" placeholder="Message">
-            <div class="button">
-                <button> SEND </button>
-            </div>
-        </form>
+        </div>
+        <div class="row justify-content-center">
+            <form class="text-right col-6">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="Name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="Email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="Message" rows="6" placeholder="Message"></textarea>
+                </div>
+                <div class="button">
+                    <button> SEND </button>
+                </div>
+            </form>
+        </div>
+        
     </section>
-    <footer>
-        <br>
-        <h5>THANK FOR VISITING!</h5>
+    <footer class="endtext row justify-content-center">
+        <img class="endlink" src="images\icons\dribble.svg">
+        <h5 class="ent">THANK FOR VISITING!</h5>
+        <img class="endlink" src="images\icons\instagram.svg">
     </footer>
+</div>
 </body>
 </html>
